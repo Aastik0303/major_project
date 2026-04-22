@@ -11,7 +11,7 @@ class GeneralChatbotAgent:
 
     def __init__(self):
         self.llm = ChatGoogleGenerativeAI(
-            model=st.secrets.get("GOOGLE_MODEL", "gemini-2.5-flash-preview-04-17"),
+            model=st.secrets.get("GOOGLE_MODEL", "gemini-2.5-flash"),
             google_api_key=st.secrets["GOOGLE_API_KEY"],
             temperature=0.7,
             streaming=True,
